@@ -28,7 +28,18 @@ public class Main {
         else{
             System.out.println("no se validan las dimensiones");
         }
+    public static int[][] llenarMatriz(ArrayList<Integer> listanm){
+            int filas = listanm.get(0);
+            int columnas = listanm.get(1);
+            int[][] matriz= new int[filas][columnas];
+            Scanner datos= new Scanner(System.in);
+            for(int i=0; i<filas;i++){
+                for(int j=0; j<columnas;j++){
+                    System.out.print("ingrese el valor para la posicion fila:"+i+" columna:"+j)
+                }
+            }
 
+        }
 
     }
 }
