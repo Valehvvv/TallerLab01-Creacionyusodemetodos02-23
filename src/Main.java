@@ -1,17 +1,30 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args){
+        metodoDimensiones();
+        validarDimensiones()
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
     }
-}
+    public static int[] metodoDimensiones() {
+        Scanner dimensiones = new Scanner(System.in);
+        System.out.println("creara una matriz de nxm");
+        System.out.println("seleccione la dimension de n (filas): ");
+        int n = dimensiones.nextInt();
+        System.out.println("seleccione la dimension de m (columnas): ");
+        int m = dimensiones.nextInt();
+        return new int[]{n, m};
+    }
+    public static int[] validarDimensiones(int[n,m]){
+        if (filas>0 && columnas>0){
+            System.out.println("se validan las dimensiones");
+        }
+        else{
+            System.out.println("no se validan las dimensiones");
+        }
+
+
+    }
+    }
+
